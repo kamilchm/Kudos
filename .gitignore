@@ -31,3 +31,4 @@ heroku-test-settings.py
 # Design-related dirs/files to ignore
 .sass-cache
 node_modules/
+/.idea/*
