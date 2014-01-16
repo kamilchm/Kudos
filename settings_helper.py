@@ -48,7 +48,7 @@ class SqliteDatabase(Database):
     def __init__(self, path):
         parent_dir = os.path.dirname(path)
         if not os.path.exists(parent_dir):
-            os.mkdirs(parent_dir)
+            os.makedirs(parent_dir)
         super(SqliteDatabase, self).__init__('sqlite:///' + path)
 
 class HerokuDatabase(Database):
