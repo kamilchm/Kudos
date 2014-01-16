@@ -798,7 +798,7 @@ window.initRemoveButton = function($jqObject) {
 				success: function(resp){
 					parent_post.addClass('post--remove-from-stream');
 					if(animations.supported) {
-						parent_post.one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(){
+						parent_post.one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(){
 							$(this).remove();
 						});
 					} else {
